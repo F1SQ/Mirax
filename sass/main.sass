@@ -1,0 +1,467 @@
+@import "fonts"
+
+*, *::before, *::after
+	box-sizing: border-box
+	outline: none !important
+
+ul[class], ol[class]
+	padding: 0
+	list-style: none
+
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd
+	margin: 0
+
+a:not([class])
+	text-decoration-skip-ink: auto
+
+input, button, textarea, select
+	font: inherit
+
+html, body
+	height: 100%
+
+h1, h2, h3, h4, h5, h6, p
+	margin: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: normal
+	font-family: "Montserrat", sans-serif
+	color: #333333
+
+.img
+	display: block
+	max-width: 100%
+	height: auto
+
+.container
+	width: 1170px
+	max-width: 100%
+	margin: 0 auto
+
+.section-title
+	font-family: 'Alumni Sans'
+	font-size: 52px
+	line-height: 46px
+	font-weight: 500
+	text-transform: uppercase
+	color: #292929
+
+// header //////////////////////////////////////////////////////////////////////////////////////
+
+.header
+	background-color: #F8F8F8
+	z-index: 100
+	&-top
+		width: 100%
+		background-color: #F18C16
+		height: 24px
+		display: flex
+		align-items: center
+		text-align: right
+		&__mail
+			text-decoration: none
+			color: #fff
+			font-size: 12px
+			line-height: 15px
+			font-weight: bold
+			transition: all 0.2s linear
+			&:hover
+				color: darken(#fff, 10%)
+	&-wrapper
+		height: 80px
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&-logo
+		display: flex
+		align-items: center
+		ul
+			list-style: none
+			min-height: 40px
+			padding: 0
+			margin: 0 0 0 15px
+			li
+				font-size: 10px
+				line-height: 13px
+				font-weight: bold
+				color: #247abe
+				text-transform: uppercase
+
+	&-nav
+		flex-grow: 1
+		padding: 0 140px 0 140px
+		ul
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			column-gap: 40px
+			row-gap: 10px
+			flex-wrap: wrap
+			list-style: none
+			padding: 0
+			margin: 0
+			li
+				a
+					color: #333333
+					text-decoration: none
+					font-size: 11px
+					line-height: 14px
+					font-weight: bold
+					transition: all 0.3s linear
+					text-transform: uppercase
+					&:hover
+						color: #247abe
+				&:first-child
+					position: relative
+				&:hover
+					&:first-child
+						ul
+							display: flex
+				ul
+					display: none
+					// display: flex
+					flex-direction: column
+					position: absolute
+					left: 0
+					top: 150%
+					row-gap: 0
+					li
+						display: flex
+						align-items: center
+						justify-content: center
+						width: 174px
+						height: 30px
+						&:not(:last-child)
+							margin: 0 0 1px 0
+						a
+							display: flex
+							align-items: center
+							justify-content: flex-start
+							width: 100%
+							height: 100%
+							padding: 5px 10px
+							color: #fff
+							background-color: #3C7AB9
+							text-decoration: none
+							transition: all 0.3s linear
+							&:hover
+								background-color: darken(#3C7AB9, 10%)
+								color: #fff
+	&-call
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		justify-content: center
+		flex-shrink: 0
+	&-phone
+		font-family: 'Alumni Sans'
+		font-size: 29px
+		line-height: 26px
+		text-decoration: none
+		color: #333333
+		transition: all 0.3s linear
+		margin: 0 0 10px 0
+		&:hover
+			color: #3C7AB9
+	&-button
+		font-size: 10px
+		line-height: 13px
+		font-weight: bold
+		color: #247abe
+		text-decoration: none
+		text-transform: uppercase
+		transition: all 0.3s linear
+		&:hover
+			color: darken(#247abe, 10%)
+
+// main //////////////////////////////////////////////////////////////////////////////////////
+
+.main
+	padding: 70px 0 50px 0
+	position: relative
+	background-color: #F8F8F8
+
+	&-slider
+		&__buttons
+			display: flex
+			align-items: center
+			justify-content: center
+			column-gap: 15px
+	&-slide
+		position: relative
+		overflow: hidden
+		&__bg
+			position: absolute
+			left: 20px
+			width: 100%
+			height: 100%
+			z-index: -1
+		&_container
+			// position: relative
+		&__wrapper
+			// position: relative
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&__info
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			padding: 0 30px 0 0
+			flex-shrink: 0
+			max-width: 60%
+		&__title
+			font-family: 'Alumni Sans'
+			font-size: 47px
+			line-height: 42px
+			font-weight: 500
+			text-transform: uppercase
+			color: #333333
+			margin: 0 0 23px 0
+		&__subtitle
+			margin: 0 0 93px 0
+			font-size: 17px
+			line-height: 20px
+			font-weight: 500
+		&__button
+			display: flex
+			align-items: center
+			justify-content: center
+			min-width: 180px
+			min-height: 45px
+			padding: 16px 56px
+			text-decoration: none
+			border-radius: 5px
+			font-weight: bold
+			font-size: 10px
+			line-height: 13px
+			border: 1px solid transparent
+			color: #fff
+			background-color: #F18C16
+			text-transform: uppercase
+			transition: all 0.3s linear
+			&:hover
+				background-color: darken(#F18C16, 10%)
+
+		&__image
+			flex-grow: 0
+			flex-shrink: 0
+			img
+				max-width: 100%
+				max-height: 100%
+				object-fit: cover
+	&-button
+		&--prev
+			stroke: #c4c5bf
+			cursor: pointer
+			transition: all 0.3s linear
+			&:hover
+				stroke: #007BBA
+	&-button
+		&--next
+			stroke: #c4c5bf
+			cursor: pointer
+			transition: all 0.3s linear
+			&:hover
+				stroke: #007BBA
+
+// catalog //////////////////////////////////////////////////////////////////////////////////////
+
+.catalog
+	padding: 45px 0 60px 0
+	border-bottom: 22px solid #F18C16
+	&-wrapper
+
+	&-title
+		margin: 0 0 38px 0
+	&-items
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		flex-wrap: wrap
+		column-gap: 5px
+		row-gap: 5px
+
+	&-item
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: flex-end
+		width: 380px
+		min-height: 380px
+		padding: 15px
+		background-color: #F3F3F3
+		text-decoration: none
+		font-weight: bold
+		font-size: 14px
+		line-height: 18px
+		color: #333333
+		text-transform: uppercase
+		img
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			max-width: 100%
+		&__text
+			max-width: 100%
+		&::before
+			content: ''
+			position: absolute
+			left: 12px
+			bottom: 0
+			width: 45px
+			height: 6px
+			background-color: #F18C16
+		&::after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0
+			right: 0
+			bottom: 0
+			background-color: #247ABE
+			opacity: 0
+			transition: all 0.2s linear
+		&:hover
+			&::after
+				opacity: 0.3
+
+// advantages //////////////////////////////////////////////////////////////////////////////////////
+
+.advantages
+	position: relative
+	padding: 60px 0 87px 0
+	&::after
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		width: 100%
+		height: 49px
+		background-image: url('../img/advantages-after.png')
+		background-repeat: repeat
+		background-position: center
+	&-wrapper
+		display: flex
+		align-items: flex-start
+		// justify-content: space-between
+		column-gap: 70px
+	&-info
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+	&-title
+		margin: 0 0 10px 0
+	&-logo
+
+	&-list
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		column-gap: 70px
+		flex-grow: 1
+
+	&-block
+		max-width: 210px
+		&__title
+			color: #247abe
+			font-size: 14px
+			line-height: 18px
+			font-weight: bold
+			margin: 0 0 12px 0
+			text-transform: uppercase
+		&__text
+			font-size: 12px
+			line-height: 15px
+			font-weight: 500
+
+// about //////////////////////////////////////////////////////////////////////////////////////
+
+.about
+	padding: 30px 0 25px 0
+	&-wrapper
+
+	&-title
+		margin: 0 0 35px 0
+
+	&-content
+		display: flex
+		align-items: center
+		column-gap: 28px
+		position: relative
+		&__bg
+			position: absolute
+			width: 370px
+			height: 370px
+			top: 50%
+			left: -15%
+			transform: translateY(-50%)
+			img
+				max-width: 100%
+				height: 100%
+	&-image
+		position: relative
+		width: 100%
+		height: 100%
+		&__text
+			display: flex
+			align-items: flex-start
+			justify-content: center
+			position: absolute
+			width: 270px
+			min-height: 100px
+			left: -38px
+			bottom: 79px
+			padding: 20px
+			color: #fff
+			font-weight: bold
+			font-size: 16px
+			line-height: 19px
+			background-color: #247ABE
+	&-info
+		display: flex
+		align-items: flex-start
+		flex-direction: column
+		row-gap: 30px
+		&__title
+			font-size: 22px
+			line-height: 27px
+			font-weight: bold
+			color: #292929
+			// margin: 0 0 25px 0
+		p, ul, li
+			font-size: 14px
+			line-height: 22px
+			font-weight: 500
+		ul
+			margin: 0
+			padding: 0 0 0 17px
+		&__button
+			display: flex
+			align-items: center
+			justify-content: center
+			min-width: 182px
+			height: 46px
+			padding: 15px 50px
+			font-size: 10px
+			line-height: 13px
+			font-weight: bold
+			background-color: #247abe
+			text-decoration: none
+			border-radius: 5px
+			text-transform: uppercase
+			color: #fff
+			transition: all 0.3s linear
+			&:hover
+				background-color: darken(#247abe, 10%)
+// media //////////////////////////////////////////////////////////////////////////////////////
+@import "media"
