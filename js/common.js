@@ -16,7 +16,7 @@ $(function() {
 	speed: 700,
 	grabCursor: true,
 	observer: true,
-
+  autoHeight: true,
 
   // Navigation arrows
   navigation: {
