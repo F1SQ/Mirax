@@ -43,7 +43,7 @@ $(function() {
 
 let menuButton = document.querySelector('.header-burger');
 let hiddenMenu = document.querySelector('.hidden-menu');
-let hiddenMenuNav = document.querySelectorAll('.hidden-menu__nav a');
+// let hiddenMenuNav = document.querySelectorAll('.hidden-menu__nav a');
 
 menuButton.addEventListener('click', function() {
 	menuButton.classList.toggle('_active');
@@ -51,11 +51,22 @@ menuButton.addEventListener('click', function() {
 });
 
 
-hiddenMenuNav.forEach((item, i) => {
-	item.addEventListener('click', () => {
-			menuButton.classList.remove('_active');
-			hiddenMenu.classList.remove('_visible');
-	});
+// hiddenMenuNav.forEach((item, i) => {
+// 	item.addEventListener('click', () => {
+// 			menuButton.classList.remove('_active');
+// 			hiddenMenu.classList.remove('_visible');
+// 	});
+// });
+
+
+
+
+$('.hidden-menu__nav > ul > li:first-child a').click(function(e) {
+	if(!$(this).hasClass('active')) {
+		e.preventDefault();
+		$(this).next().slideDown();
+		$(this).addClass('active');
+	}
 });
 
 

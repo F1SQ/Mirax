@@ -61,7 +61,7 @@ body
 	width: 100%
 	height: 100%
 	background-color: #F8F8F8
-	transition: all 0.3s linear
+	transition: all 0.3s ease
 	z-index: 99
 
 	&__wrapper
@@ -104,11 +104,21 @@ body
 			font-weight: 600
 			color: darken(#3C7AB9, 10%)
 
-// header //////////////////////////////////////////////////////////////////////////////////////
+.hidden-menu__nav ul li ul
+	display: none
 
-.header
+.hidden-menu__nav ul li ul li a
+	font-size: 14px
+
+.hidden-menu__nav ul li ul li
+	margin-top: 8px
+
+// header //////////////////////////////////////////////////////////////////////////////////////
+.header._main
 	background-color: #F8F8F8
-	transition: all 0.3s linear
+.header
+	background-color: #fff
+	transition: all 0.3s ease
 	// z-index: 100
 	&-top
 		width: 100%
@@ -117,14 +127,14 @@ body
 		display: flex
 		align-items: center
 		text-align: right
-		transition: all 0.2s linear
+		transition: all 0.2s ease
 		&__mail
 			text-decoration: none
 			color: #fff
 			font-size: 12px
 			line-height: 15px
 			font-weight: bold
-			transition: all 0.2s linear
+			transition: all 0.2s ease
 			&:hover
 				color: darken(#fff, 10%)
 	&-wrapper
@@ -168,7 +178,7 @@ body
 					font-size: 11px
 					line-height: 14px
 					font-weight: bold
-					transition: all 0.3s linear
+					transition: all 0.3s ease
 					text-transform: uppercase
 					&:hover
 						color: #247abe
@@ -207,7 +217,7 @@ body
 							color: #fff
 							// background-color: #3C7AB9
 							text-decoration: none
-							transition: all 0.3s linear
+							transition: all 0.3s ease
 							&:hover
 								background-color: darken(#3C7AB9, 10%)
 								color: #fff
@@ -223,7 +233,7 @@ body
 		line-height: 26px
 		text-decoration: none
 		color: #333333
-		transition: all 0.3s linear
+		transition: all 0.3s ease
 		margin: 0 0 10px 0
 		&:hover
 			color: #3C7AB9
@@ -234,9 +244,50 @@ body
 		color: #247abe
 		text-decoration: none
 		text-transform: uppercase
-		transition: all 0.3s linear
+		transition: all 0.3s ease
 		&:hover
 			color: darken(#247abe, 10%)
+
+// header-bottom //////////////////////////////////////////////////////////////////////////////////////
+
+.header-bottom
+	background-color: #F8F8F8
+	min-height: 40px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	&__wrapper
+		ul
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			column-gap: 20px
+			margin: 0
+			padding: 0
+			list-style: none
+			li
+				position: relative
+				color: #247ABE
+				font-size: 11px
+				line-height: 14px
+				font-weight: bold
+				&:not(:last-child)
+					&::after
+						content: '/'
+						position: absolute
+						color: #292929
+						font-size: 11px
+						line-height: 14px
+						font-weight: bold
+						top: 50%
+						transform: translateY(-50%)
+						right: -12px
+				a
+					text-decoration: none
+					transition: all 0.3s ease
+					color: #292929
+					&:hover
+						color: #247ABE
 
 // main //////////////////////////////////////////////////////////////////////////////////////
 
@@ -303,7 +354,7 @@ body
 			color: #fff
 			background-color: #F18C16
 			text-transform: uppercase
-			transition: all 0.3s linear
+			transition: all 0.3s ease
 			&:hover
 				background-color: darken(#F18C16, 10%)
 
@@ -318,14 +369,14 @@ body
 		&--prev
 			stroke: #c4c5bf
 			cursor: pointer
-			transition: all 0.3s linear
+			transition: all 0.3s ease
 			&:hover
 				stroke: #007BBA
 
 		&--next
 			stroke: #c4c5bf
 			cursor: pointer
-			transition: all 0.3s linear
+			transition: all 0.3s ease
 			&:hover
 				stroke: #007BBA
 
@@ -394,7 +445,7 @@ body
 			bottom: 0
 			background-color: #247ABE
 			opacity: 0
-			transition: all 0.2s linear
+			transition: all 0.2s ease
 		&:hover
 			&::after
 				opacity: 0.3
@@ -526,7 +577,7 @@ body
 			border-radius: 5px
 			text-transform: uppercase
 			color: #fff
-			transition: all 0.3s linear
+			transition: all 0.3s ease
 			&:hover
 				background-color: darken(#247abe, 10%)
 
@@ -577,7 +628,7 @@ body
 			left: 0
 			background-color: #57575746
 			z-index: 1
-			transition: all 0.3s linear
+			transition: all 0.3s ease
 		&:hover
 			&::before
 				background-color: #2c2c2c9f
@@ -658,7 +709,7 @@ body
 				left: 0
 				background-color: #57575746
 				z-index: 1
-				transition: all 0.3s linear
+				transition: all 0.3s ease
 			&:hover
 				&::before
 					background-color: #2c2c2c9f
@@ -674,7 +725,7 @@ body
 			column-gap: 7px
 			background-color: #247ABE
 			overflow: hidden
-			transition: all 0.3s linear
+			transition: all 0.3s ease
 			&:hover
 				background-color: darken(#247ABE, 10%)
 			&__bg
@@ -740,7 +791,7 @@ body
 		font-weight: 500
 		&__link
 			color: #247ABE
-			transition: all 0.3s linear
+			transition: all 0.3s ease
 			&:hover
 				color: darken(#247ABE, 10%)
 	&-form
@@ -789,7 +840,7 @@ body
 		border-radius: 5px
 		text-transform: uppercase
 		cursor: pointer
-		transition: all 0.3s linear
+		transition: all 0.3s ease
 		&:hover
 			background-color: darken(#F18C16, 10%)
 
@@ -827,7 +878,7 @@ body
 			font-weight: 600
 			color: #333333
 			text-decoration: none
-			transition: all 0.3s linear
+			transition: all 0.3s ease
 			&:hover
 				text-decoration: underline
 		&__adress
@@ -869,7 +920,7 @@ body
 						font-weight: 600
 						color: #247abe
 						text-decoration: none
-						transition: all 0.3s linear
+						transition: all 0.3s ease
 						&:hover
 							text-decoration: underline
 					&:not(:last-child)
@@ -883,7 +934,7 @@ body
 			color: #333333
 			text-transform: uppercase
 			text-decoration: none
-			transition: all 0.3s linear
+			transition: all 0.3s ease
 			&:hover
 				text-decoration: underline
 		&__secondary
@@ -894,7 +945,7 @@ body
 			line-height: 19px
 			color: #247abe
 			text-decoration: none
-			transition: all 0.3s linear
+			transition: all 0.3s ease
 			&:hover
 				text-decoration: underline
 
@@ -935,6 +986,138 @@ body
 	font-weight: 600
 	font-size: 10px
 	line-height: 16px
+
+// contacts //////////////////////////////////////////////////////////////////////////////////////
+
+.contacts
+	padding: 28px 0 39px 0
+	&-title
+		margin: 0 0 26px 0
+	&-wrapper
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		row-gap: 20px
+		column-gap: 7px
+		&__download
+			font-size: 11px
+			line-height: 14px
+			font-weight: bold
+			color: #247ABE
+	&-info
+		display: grid
+		grid-template-columns: 1fr
+		grid-auto-rows: min-content
+	&-executive
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 20px 14px 20px 19px
+		background-color: #f6f6f6
+		&__person
+			max-width: 70%
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			row-gap: 5px
+		&__name
+			font-size: 18px
+			line-height: 22px
+			font-weight: bold
+			color: #292929
+
+		&__position
+			font-size: 10px
+			line-height: 13px
+			font-weight: bold
+			color: #247abe
+		&__details
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			row-gap: 5px
+			flex-shrink: 0
+			a
+				font-size: 12px
+				line-height: 15px
+				font-weight: 500
+				text-decoration: none
+				color: #292929
+				&:hover
+					text-decoration: underline
+	&-schedule
+		padding: 10px 15px 10px 0
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&__worktime
+			font-size: 11px
+			line-height: 14px
+			font-weight: bold
+			color: #292929
+		&__holidays
+			font-size: 11px
+			line-height: 14px
+			font-weight: bold
+			color: #247ABE
+	&-details
+		display: grid
+		grid-template-columns: 1fr
+		row-gap: 27px
+		padding: 20px 14px 20px 19px
+		background-color: #f6f6f6
+		&__item
+			display: flex
+			align-items: flex-start
+			justify-content: space-between
+		&__category
+			font-size: 11px
+			line-height: 14px
+			font-weight: bold
+			color: #292929
+			text-align: left
+			flex-shrink: 0
+		&__answer
+			font-size: 12px
+			line-height: 15px
+			font-weight: 500
+			color: #292929
+			text-align: right
+			a
+				text-decoration: none
+				font-size: 12px
+				line-height: 15px
+				font-weight: 500
+				color: #292929
+				text-align: right
+				&:hover
+					text-decoration: underline
+
+	&-form
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: flex-start
+		padding: 24px 27px 32px 27px
+		background-color: #f6f6f6
+		&__title
+			font-family: 'Alumni Sans'
+			font-weight: 500
+			text-transform: uppercase
+			font-size: 48px
+			line-height: 43px
+			margin: 0 0 10px 0
+			color: #292929
+		form
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: flex-start
+			row-gap: 18px
+		&__input
+			width: 100%
+		&__privacy
+
+		&__button
 
 // media //////////////////////////////////////////////////////////////////////////////////////
 @import "media"
