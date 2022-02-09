@@ -13,6 +13,31 @@
 </head>
 <body>
 
+	<div class="hidden-menu">
+		<div class="container">
+			<div class="hidden-menu__wrapper">
+				<div class="hidden-menu__nav">
+					<ul>
+						<li><a href="#">Продукция</a>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<!-- /.header-nav -->
+				<div class="hidden-info__text">
+					<a href="tel:73422598855" class="hidden-info__link">+7 (342) 259 88 55</a>
+					<a href="mailto:info@mirax-safety.com" class="hidden-info__link">info@mirax-safety.com</a>
+					<span class="hidden-info__adress">Г. Пермь, ул. Пушкина, д 123, оф. 11</span>
+				</div>
+				<!-- /.hidden-info__text -->
+			</div>
+			<!-- /.hidden-menu__wrapper -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.hidden-menu -->
+
 	<header class="header">
 		<div class="header-top">
 			<div class="container">
@@ -52,6 +77,12 @@
 					<a href="#" class="header-button">Заказать звонок</a>
 				</div>
 				<!-- /.header-call -->
+				<div class="header-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- /.header-burger -->
 			</div>
 			<!-- /.header-wrapper -->
 		</div>
@@ -182,20 +213,23 @@
 				<h2 class="catalog-title section-title">Каталог продукции</h2>
 				<div class="catalog-items">
 					<a href="#" class="catalog-item">
-						<img src="img/catalog-product-1.png" alt="image: product"><div class="catalog-item__text">Газоанализаторы</div>
+						<img src="img/catalog-product-1.png" alt="image: product">
+						<span class="catalog-item__text">Газоанализаторы</span>
 					</a>
 					<!-- /.catalog-item -->
 
 					<a href="#" class="catalog-item">
-						<img src="img/catalog-product-2.png" alt="image: product"><div class="catalog-item__text">Газоанализаторные системы</div>
+						<img src="img/catalog-product-2.png" alt="image: product">
+						<span class="catalog-item__text">Газоанализаторные системы</span>
 					</a>
 					<!-- /.catalog-item -->
 					
 					<a href="#" class="catalog-item">
 						<img src="img/catalog-product-3.png" alt="image: product">
-						<div class="catalog-item__text">Системы экологического мониторинга</div>
+						<span class="catalog-item__text">Системы экологического мониторинга</span>
 					</a>
-					<!-- /.catalog-item -->
+					<!-- /.catalog-item -->					
+
 					
 				</div>
 				<!-- /.catalog-items -->
@@ -290,7 +324,7 @@
 						<h4 class="news-item__main__title">Заголовок новости</h4>
 					</div>
 					<!-- /.news-item__main -->
-					<div class="news-items">
+
 						<div class="news-item">
 							<img src="img/news-image-2.jpg" alt="image: production" class="news-item__bg">
 							<a href="#" class="news-item__link"></a>
@@ -326,15 +360,11 @@
 											transform="translate(-4.079 -4.076)"  />
 									</g>
 								</svg>
-
 							</div>
 							<!-- /.news-item__last__circle -->
-							<span class="news-item__last__text">Посмотреть все</span>
-						
+							<span class="news-item__last__text">Посмотреть все</span>						
 						</div>
 						<!-- /.news-item -->
-					</div>
-					<!-- /.news-items -->
 
 				</div>
 				<!-- /.news-content -->
@@ -349,7 +379,7 @@
 			<img src="img/main-bg.png" alt="image: logo">
 		</div>
 		<!-- /.request__bg -->
-		<div class="container">
+		<div class="container request_container">
 			<div class="request-wrapper">
 				<div class="request-description">
 					<h2 class="request-title section-title">Остались вопросы?</h2>
@@ -440,7 +470,7 @@
 					<!-- /.mirax-label -->
 					<div class="studio-label">
 						<span class="studio-text">Создание и продвижение сайтов</span>
-						<img src="img/web-studio-logo.png" alt="image: web-studio logo">
+						<a href="#"><img src="img/web-studio-logo.svg" alt="image: web-studio logo"></a>
 					</div>
 					<!-- /.studio-label -->
 				</div>
@@ -450,6 +480,8 @@
 		</div>
 		<!-- /.footer-label -->
 	</footer>
+
+
 
 	<script src="libs/jquery.min.js"></script>
 	<script src="libs/fancybox/fancybox.js"></script>

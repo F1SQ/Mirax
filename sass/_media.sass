@@ -1,18 +1,516 @@
 // @import "vars"
 
+@media (max-width: 1440px)
+	.main
+		&-slide
+			&__bg
+				left: -250px
+	.request
+		&__bg
+			right: -30%
 @media (max-width: 1200px)
 	.container
 		width: 960px
+	.section-title
+		font-size: 38px
+		line-height: 40px
+	.main
+		&-slide
+			&__title
+				font-size: 42px
+				line-height: 40px
+			&__subtitle
+				font-size: 16px
+				margin: 0 0 70px 0
+			&__image
+				max-width: 350px
 
+	.catalog
+		&-item
+			width: 100%
+			min-height: 300px
+			&__text
+				font-size: 10px
+				line-height: 12px
+		img
+			top: 40%
+			max-width: 200px
+			max-height: 200px
+	.advantages
+		&-info
+			flex-shrink: 0
+	.news
+		&-content
+		&-item
+			min-height: 235px
+			&__main
+				min-width: 520px
+				min-height: 470px
+			&__last
+				width: 220px
+				min-height: 235px
+	.request
+		padding: 40px 0 50px 0
+		&-wrapper
+			flex-direction: column
+			row-gap: 25px
+		&-description
+			row-gap: 20px
+			br
+				display: none
+		&-title
+			margin: 0px 0 5px 0
+	.footer
+		&-wrapper
+			grid-template-columns: minmax(min-content, 200px) 1fr minmax(80px, 150px)
+		&-production
+			grid-column: 2/3
+		&-links
+			grid-column: 3/4
 @media (max-width: 992px)
 	.container
 		width: 730px
+	.section-title
+		font-size: 35px
+	.header
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 100
+		&_scroll
+			background-color: #fff
+			.header-top
+				height: 0
+		&-top
+			height: 20px
+		&-wrapper
+			height: 70px
+		&-logo
+			ul
+				display: none
+		&-nav
+			display: none
+		&-burger
+			position: relative
+			width: 30px
+			height: 19px
+			margin: 0 0 0 50px
+			span
+				content: ''
+				position: absolute
+				width: 30px
+				height: 2px
+				left: 0
+				background-color: #3c7ab9
+				transition: all 0.2s linear
+				&:nth-child(1)
+					top: 0
+				&:nth-child(2)
+					top: 50%
+					transform: translateY(-50%)
+				&:nth-child(3)
+					bottom: 0
+		&-call
+			align-items: center
+	.header-burger._active
+		span
+			&:nth-child(2)
+				opacity: 0
+			&:nth-child(1)
+				top: 50%
+				transform: rotate(45deg)translate(0, -50%)
+			&:nth-child(3)
+				bottom: 50%
+				transform: rotate(-45deg)translate(0, 50%)
+	.hidden-menu._visible
+		top: 0
+	.main
+		padding: 110px 0 40px 0
+		&-slide
+			&__bg
+				display: none
+			&__wrapper
+				align-items: flex-start
+				justify-content: space-evenly
+			&__info
+				padding: 0 20px 0 0
+				max-width: 50%
+			&__title
+				font-size: 32px
+				line-height: 35px
+				br
+					display: none
+			&__subtitle
+				font-size: 12px
+				margin: 0 0 50px 0
+			&__image
+				max-width: 250px
+	.catalog
+		&-item
+			min-height: 270px
 
+	.advantages
+		padding: 40px 0 80px 0
+		&-wrapper
+			column-gap: 50px
+		&-list
+			column-gap: 20px
+		&-block
+			&__title
+				font-size: 13px
+				font-weight: 600
+			&__text
+				font-size: 10px
+	.about
+		&-content
+			flex-direction: column
+			align-items: center
+			column-gap: 0
+			row-gap: 25px
+			&__bg
+				display: none
+		&-image
+			width: auto
+		&-info
+			row-gap: 20px
+			p
+				font-size: 13px
+	.news
+		&-content
+			grid-template-columns: repeat(2, 1fr)
+			column-gap: 5px
+			row-gap: 5px
+		&-item
+			grid-column: span 1
+			min-height: 185px
+			&__main
+				grid-column: span 1
+				grid-row: 1/2
+				min-width: auto
+				min-height: 280px
+				&__title
+					font-size: 20px
+					line-height: 23px
+			&__last
+				width: auto
+	.request
+		&__bg
+			display: none
+		&-description
+			row-gap: 15px
+		&-input
+			&--message
+				width: 420px
+	.footer
+		&-wrapper
+			// grid-template-columns: minmax(min-content, 200px) 1fr minmax(80px, 150px)
+			column-gap: 20px
+		&-production
+			row-gap: 10px
+			max-width: 350px
+			&__items
+				row-gap: 17px
+				column-gap: 50px
+			&__item
+
+		&-info
+			max-width: 200px
+			&__link
+				font-size: 10px
+				line-height: 12px
+			&__text
+				font-size: 10px
+				line-height: 12px
+		&-link
+			&__secondary
+				font-size: 12px
+				line-height: 14px
+
+		&-links
+			flex-shrink: 0
 @media (max-width: 767px)
 	.container
 		width: 540px
+	.advantages
+		&-wrapper
+			flex-direction: column
+			column-gap: 0
+			row-gap: 25px
+		&-info
+			width: 100%
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+		&-title
+			margin: 0
+	.catalog
+		&-items
+			grid-template-columns: 1fr
+			row-gap: 15px
+		&-item
+			width: 80%
+			margin: 0 auto
+	.about
+		&-image
+			img
+				max-width: 100%
+	.request
+		&-input
+			&--message
+				max-width: 260px
+
+	.footer
+		&-wrapper
+			row-gap: 20px
+		&-info
+			grid-column: 1/4
+			grid-row: 1/2
+			flex-direction: row
+			column-gap: 40px
+			row-gap: 0
+			align-items: center
+			max-width: 100%
+		&-logo
+			margin: 0
+		&-production
+			grid-column: 1/3
+			grid-row: 2/3
+			padding: 0
+			&__items
+				column-gap: 20px
+				row-gap: 20px
+
+		&-links
+			grid-column: 3/4
+			grid-row: 2/3
+			padding: 0
+			justify-content: flex-start
 
 @media (max-width: 576px)
 	.container
 		width: 100%
 		padding: 0 16px
+	.section-title
+		font-size: 28px
+		line-height: normal
+	.header
+		&-call
+			display: none
+	.main
+		// padding: 30px 0 30px 0
+		&-slider
+			&__buttons
+				column-gap: 40px
+				padding: 30px 0 0 0
+		&-slide
+			&__wrapper
+				row-gap: 25px
+				flex-direction: column-reverse
+			&__image
+				max-width: 180px
+				margin: 0 auto
+			&__info
+				align-items: center
+				text-align: center
+				max-width: 100%
+				padding: 0
+			&__title
+				font-size: 31px
+				line-height: normal
+			&__subtitle
+				margin: 0 0 40px 0
+	.catalog
+		padding: 40px 0 40px 0
+		&-title
+			margin: 0 0 20px 0
+	.advantages
+		padding: 30px 0 70px 0
+		&-wrapper
+			row-gap: 20px
+		&-list
+			column-gap: 10px
+	.about
+		&-title
+			margin: 0 0 20px 0
+		&-image
+			&__text
+				width: 250px
+				min-height: 70px
+				left: -38px
+				bottom: 30px
+				padding: 10px
+				color: #fff
+				font-weight: bold
+				font-size: 14px
+				line-height: 16px
+		&-info
+			row-gap: 15px
+			&__title
+				font-size: 18px
+
+	.news
+		padding: 25px 0 55px 0
+		&-title
+			margin: 0 0 20px 0
+		&-content
+			grid-template-columns: 1fr
+		&-item
+			min-height: 250px
+			&__bg
+				object-fit: cover
+			&__main
+				min-height: 250px
+				&__bg
+					object-fit: cover
+			&__last
+				min-height: 250px
+	.request
+		padding: 40px 0 30px 0
+		&-text
+			font-size: 11px
+			line-height: normal
+		&-form
+			width: 100%
+			&__wrapper
+				position: relative
+				flex-direction: column-reverse
+				padding: 0 0 70px 0
+				column-gap: 0
+				row-gap: 15px
+		&-inputs
+			row-gap: 12px
+		&-input
+			width: 100%
+			&--message
+				max-width: none
+				min-height: 140px
+		&-button
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+	.footer
+		&-wrapper
+			grid-template-columns: repeat(2, 1fr)
+			column-gap: 0
+			row-gap: 25px
+		&-production
+			grid-column: 1/3
+			grid-row: 2/3
+			&__items
+				justify-content: space-between
+				width: 100%
+
+		&-links
+			grid-column: 1/3
+			grid-row: 3/4
+			flex-direction: row
+			justify-content: space-between
+
+@media (max-width: 375px)
+	.section-title
+		font-size: 26px
+		text-align: center
+	.main
+		padding: 110px 0 20px 0
+		&-slide
+			&__image
+				max-width: 160px
+			&__title
+				font-size: 23px
+				margin: 0 0 20px 0
+			&__subtitle
+				font-size: 10px
+				margin: 0 0 20px 0
+		&-slider
+			&__buttons
+				padding: 20px 0 0 0
+	.catalog
+		&-title
+			margin: 0 0 15px 0
+		&-item
+			width: 100%
+	.advantages
+		&-wrapper
+			row-gap: 15px
+		&-list
+			flex-direction: column
+			column-gap: 0
+			row-gap: 20px
+			width: 100%
+		&-block
+			width: 100%
+			max-width: none
+			&__title
+				font-size: 11px
+				br
+					display: none
+	.about
+		&-title
+			margin: 0 0 15px 0
+		&-image
+			&__text
+				width: 200px
+				min-height: 50px
+				left: -38px
+				bottom: 0
+				padding: 10px
+				font-weight: 600
+				font-size: 10px
+				line-height: 12px
+		&-content
+			row-gap: 15px
+		&-info
+			&__title
+				font-size: 15px
+				line-height: normal
+			p
+				font-size: 11px
+				line-height: normal
+			li
+				font-size: 12px
+				line-height: 16px
+			&__button
+				align-self: center
+	.footer
+		&-info
+			column-gap: 20px
+			&__text
+				row-gap: 10px
+		&-production
+			&__items
+				column-gap: 0px
+
+			&__item
+				width: 100%
+				max-width: none
+				ul
+					width: 100%
+					display: flex
+					flex-wrap: wrap
+					column-gap: 10px
+					row-gap: 10px
+					li
+						&:not(:last-child)
+
+							margin: 0
+		&-label
+			&__wrapper
+				min-height: 30px
+		&-links
+			flex-wrap: wrap
+			column-gap: 15px
+			row-gap: 10px
+			justify-content: flex-start
+			margin: 0 auto
+	.mirax-label
+		font-size: 7px
+		line-height: 10px
+	.studio
+		&-label
+			img
+				width: 50px
+		&-text
+			font-size: 7px
+			line-height: 10px
