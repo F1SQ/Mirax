@@ -208,12 +208,32 @@
             <h3 class="contacts-form__title">Как мы можем вам помочь?</h3>
             <form action="#">
               <input type="text" class="contacts-form__input" placeholder="Ваше имя">
-              <select name="" id="" class="contacts-form__input" placeholder="Ваш вопрос связан?*"></select>
+              <div class="contacts-form__select">
+                <select name="" id="" class="contacts-form__input">
+                  <option value="article-1" selected hidden>Ваш вопрос связан?*</option>
+                  <option value="article-1">1</option>
+                  <option value="article-2">2</option>
+                  <option value="article-3">3</option>
+                </select>
+                <img src="img/contacts-form-download-arrow.svg" alt="icon: arrow">             
+              </div>
               <input type="text" class="contacts-form__input" placeholder="Телефон*">
               <input type="text" class="contacts-form__input" placeholder="E-mail">
-              <input type="file" class="contacts-form__input" placeholder="Прикрепить файл">
-              <textarea name="" id="" class="contacts-form__input" placeholder="">Ваше сообщение*</textarea>
-              <a href="#" class="contacts-form__privacy">Я согласен с политикой конфиденциальности и принимаю пользовательское соглашение</a>
+
+              <label class="contacts-form__attach"> 
+                <input type="file" class="contacts-form__input " placeholder="Прикрепить файл">
+                <span>Прикрепить файл</span>
+                <img src="img/contacts-form-download-arrow.svg" alt="icon: arrow">
+              </label>
+             
+              <textarea name="" id="" class="contacts-form__input contacts-form__input--message" placeholder="Ваше сообщение*"></textarea>
+
+              <div class="contacts-form__checkbox">
+                <img src="img/contacts-form-accept.svg" alt="icon: accept">                
+                <a href="#" class="contacts-form__privacy">Я согласен с политикой конфиденциальности и принимаю пользовательское
+                  соглашение</a>              
+              </div>
+              
               <button type="submit" class="contacts-form__button">Отправить</button>
             </form>
           </div>

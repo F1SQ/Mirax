@@ -1113,11 +1113,90 @@ body
 			align-items: center
 			justify-content: flex-start
 			row-gap: 18px
+		&__select
+			position: relative
+			width: 100%
+			font-size: 12px
+			line-height: 15px
+			font-weight: 500
+			color: #292929
+			select
+				appearance: none
+			img
+				position: absolute
+				top: 50%
+				right: 15px
+				transform: translateY(-50%)
 		&__input
 			width: 100%
-		&__privacy
+			padding: 7px 14px
+			border-radius: 3px
+			border: 1px solid #292929
+			ont-size: 12px
+			line-height: 15px
+			font-weight: 400
+			color: #292929
+			&::placeholder
+				font-size: 12px
+				line-height: 15px
+				font-weight: 500
+				color: #292929
+			option
+				font-size: 12px
+				line-height: 15px
+				font-weight: 500
+				color: #292929
 
+			&--message
+				padding: 12px 14px
+				resize: none
+				min-height: 160px
+		&__attach
+			display: flex
+			align-items: center
+			justify-content: space-between
+			width: 100%
+			padding: 7px 14px
+			background-color: #D8D8D8
+			border-radius: 3px
+			color: #292929
+			font-size: 12px
+			line-height: 15px
+			font-weight: 500
+
+			input
+				display: none
+		&__checkbox
+			display: flex
+			align-items: center
+			img
+				margin: 0 7px 0 0
+		&__privacy
+			text-decoration: none
+			font-size: 9px
+			line-height: 11px
+			font-weight: 500
+			color: #292929
+			&:hover
+				text-decoration: underline
 		&__button
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 100%
+			padding: 16px
+			font-size: 10px
+			line-height: 13px
+			font-weight: bold
+			text-transform: uppercase
+			color: #FFFFFF
+			background-color: #F18C16
+			border: none
+			border-radius: 5px
+			cursor: pointer
+			transition: all 0.3s ease
+			&:hover
+				background-color: darken(#F18C16, 10%)
 
 // media //////////////////////////////////////////////////////////////////////////////////////
 @import "media"

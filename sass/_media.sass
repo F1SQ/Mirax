@@ -229,6 +229,20 @@
 
 		&-links
 			flex-shrink: 0
+
+	.contacts
+		padding: 75px 0 39px 0
+		&-wrapper
+			grid-template-columns: 1fr
+			&__download
+				margin: 0 auto
+		&-details
+			&__category
+				max-width: 29%
+			&__answer
+				max-width: 69%
+				flex-shrink: 0
+
 @media (max-width: 767px)
 	.container
 		width: 540px
@@ -408,6 +422,49 @@
 			flex-direction: row
 			justify-content: space-between
 
+@media (max-width: 425px)
+
+	.contacts
+		&-executive
+			&__name
+				font-size: 15px
+				line-height: 20px
+			&__details
+				a
+					font-size: 11px
+					line-height: 14px
+		&-schedule
+			&__worktime, &__holidays
+				font-size: 10px
+				line-height: 12px
+		&-details
+			padding: 20px 15px 15px 15px
+			&__item
+				flex-direction: column
+				align-items: center
+				row-gap: 8px
+			&__category, &__answer
+				text-align: center
+				max-width: 100%
+			&__category
+				font-size: 12px
+		&-form
+			padding: 15px
+			&__title
+				font-size: 26px
+				line-height: 30px
+			form
+				row-gap: 12px
+			&__input
+				padding: 5px 10px
+				font-size: 11px
+				line-height: 12px
+				&::placeholder
+					font-size: 11px
+					line-height: 12px
+				&--message
+					min-height: 120px
+
 @media (max-width: 375px)
 	.section-title
 		font-size: 26px
@@ -514,3 +571,23 @@
 		&-text
 			font-size: 7px
 			line-height: 10px
+
+	.contacts
+		&-executive
+			padding: 15px 10px 15px 10px
+			flex-direction: column
+			row-gap: 10px
+			&__person
+				align-items: center
+			&__name
+				font-size: 14px
+				line-height: 16px
+			&__details
+				align-items: center
+				text-align: center
+		&-schedule
+			flex-direction: column
+	    row-gap: 5px
+			&__worktime, &__holidays
+				font-size: 9px
+				line-height: 11px
