@@ -1589,6 +1589,7 @@ body {
 
 .contacts {
   padding: 28px 0 39px 0;
+  border-bottom: 24px solid #F6F6F6;
 }
 
 .contacts-title {
