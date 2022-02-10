@@ -1121,12 +1121,14 @@ body
 			font-weight: 500
 			color: #292929
 			select
+				cursor: pointer
 				appearance: none
 			img
 				position: absolute
 				top: 50%
 				right: 15px
 				transform: translateY(-50%)
+				pointer-events: none
 		&__input
 			width: 100%
 			padding: 7px 14px
@@ -1203,6 +1205,75 @@ body
 			transition: all 0.3s ease
 			&:hover
 				background-color: darken(#F18C16, 10%)
+
+// products //////////////////////////////////////////////////////////////////////////////////////
+
+.products
+	padding: 30px 0 53px 0
+	&-title
+		margin: 0 0 33px 0
+	&-wrapper
+
+	&-items
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		column-gap: 5px
+		row-gap: 5px
+	// display: flex
+	// align-items: center
+	// justify-content: flex-start
+	// flex-wrap: wrap
+	// column-gap: 5px
+	// row-gap: 5px
+
+	&-item
+		grid-column: span 1
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: flex-end
+		width: 385px
+		min-height: 380px
+		padding: 15px
+		background-color: #F3F3F3
+		text-decoration: none
+		font-weight: bold
+		font-size: 14px
+		line-height: 18px
+		color: #333333
+		text-transform: uppercase
+		img
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			max-width: 100%
+		&__text
+			max-width: 100%
+		&::before
+			content: ''
+			position: absolute
+			left: 12px
+			bottom: 0
+			width: 45px
+			height: 6px
+			background-color: #F18C16
+		&::after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0
+			right: 0
+			bottom: 0
+			background-color: #247ABE
+			opacity: 0
+			transition: all 0.2s ease
+		&:hover
+			&::after
+				opacity: 0.3
 
 // media //////////////////////////////////////////////////////////////////////////////////////
 @import "media"

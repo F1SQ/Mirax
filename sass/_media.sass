@@ -67,6 +67,18 @@
 			grid-column: 2/3
 		&-links
 			grid-column: 3/4
+
+	.products
+		&-item
+			width: 100%
+			min-height: 300px
+			&__text
+				font-size: 10px
+				line-height: 12px
+		img
+			top: 40%
+			max-width: 200px
+			max-height: 200px
 @media (max-width: 992px)
 	.container
 		width: 730px
@@ -242,6 +254,15 @@
 			&__answer
 				max-width: 69%
 				flex-shrink: 0
+	.products
+		padding: 80px 0 50px 0
+		&-items
+			grid-template-columns: repeat(2, 1fr)
+			row-gap: 5px
+		&-item
+			width: 100%
+			margin: 0 auto
+			min-height: 270px
 
 @media (max-width: 767px)
 	.container
@@ -300,6 +321,13 @@
 			grid-row: 2/3
 			padding: 0
 			justify-content: flex-start
+	.products
+		&-items
+			grid-template-columns: 1fr
+			row-gap: 15px
+		&-item
+			width: 80%
+			margin: 0 auto
 
 @media (max-width: 576px)
 	.container
@@ -464,6 +492,11 @@
 					line-height: 12px
 				&--message
 					min-height: 120px
+	.products
+		&-item
+			width: 100%
+		&-title
+			margin: 0 0 15px 0
 
 @media (max-width: 375px)
 	.section-title
