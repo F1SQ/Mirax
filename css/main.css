@@ -3349,6 +3349,9 @@ body {
     font-size: 9px;
     line-height: 11px;
   }
+  .company {
+    padding: 60px 0 35px 0;
+  }
   .company-image__label {
     top: 200px;
     padding: 8px;
