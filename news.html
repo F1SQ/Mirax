@@ -91,7 +91,7 @@
             <a href="tel:73422598855" class="header-phone"
               >+7 (342) 259 88 55</a
             >
-            <a href="#" class="header-button">Заказать звонок</a>
+            <a href="#hidden-form" class="header-button">Заказать звонок</a>
           </div>
           <!-- /.header-call -->
           <div class="header-burger">
@@ -567,6 +567,36 @@
       </div>
       <!-- /.footer-label -->
     </footer>
+
+    <div id="hidden-form" class="hidden-form">
+      <div class="hidden-form__title">Заголовок</div>
+      <form action="#">
+        <div class="hidden-form__wrapper">
+          <input
+            type="text"
+            class="hidden-form__input"
+            required
+            placeholder="Ваше имя*"
+          />
+          <input
+            type="tel"
+            class="hidden-form__input"
+            required
+            placeholder="Телефон*"
+          />
+          <input
+            type="email"
+            class="hidden-form__input"
+            required
+            placeholder="E-mail*"
+          />
+          <button type="submit" class="hidden-form__button">Отправить</button>
+        </div>
+        <!-- /.form-wrapper -->
+      </form>
+    </div>
+    <!-- /.hidden-form -->
+
     <script src="libs/jquery.min.js"></script>
     <script src="libs/fancybox/fancybox.js"></script>
     <script src="libs/swiper/swiper-bundle.min.js"></script>
