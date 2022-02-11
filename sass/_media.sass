@@ -8,6 +8,24 @@
 	.request
 		&__bg
 			right: -30%
+	.company
+		&-info
+			padding: 20px 0 0 0
+			row-gap: 15px
+			&__text
+				font-size: 13px
+				line-height: 20px
+		&-image
+			img
+				&:nth-child(1)
+					width: 520px
+			&__bg
+				display: none
+			&__label
+				padding: 15px
+				font-size: 14px
+				line-height: 17px
+
 @media (max-width: 1200px)
 	.container
 		width: 960px
@@ -79,6 +97,26 @@
 			top: 40%
 			max-width: 200px
 			max-height: 200px
+@media (max-width: 1024px)
+	.use
+		&-slider
+			width: 100%
+			&__slide
+				img
+					height: 275px
+				span
+					font-size: 20px
+					line-height: 21px
+	.infographics
+		&-wrapper
+			height: auto
+	.partners
+		padding: 25px 0 40px 0
+		&__bg
+			display: none
+		&-slider
+			&__slide
+				justify-content: center
 @media (max-width: 992px)
 	.container
 		width: 730px
@@ -263,6 +301,21 @@
 			width: 100%
 			margin: 0 auto
 			min-height: 270px
+	.company
+		padding: 70px 0 50px 0
+		&-title
+			margin: 0 0 20px 0
+		&-wrapper
+			grid-template-columns: 1fr
+		&-image
+			margin: 0 auto
+	.use
+		padding: 47px 0 40px 0
+	.infographics
+		&-title
+			margin: 0 0 20px 0
+	.partners
+		padding: 20px 0 30px 0
 
 @media (max-width: 767px)
 	.container
@@ -328,6 +381,16 @@
 		&-item
 			width: 80%
 			margin: 0 auto
+	.company
+		&-image
+			img:nth-child(1)
+				width: 380px
+			&__label
+				left: -30px
+				top: 250px
+				padding: 12px
+				font-size: 12px
+				line-height: 15px
 
 @media (max-width: 576px)
 	.container
@@ -449,6 +512,43 @@
 			grid-row: 3/4
 			flex-direction: row
 			justify-content: space-between
+
+	.company
+		padding: 70px 0 35px 0
+		&-image
+			img:nth-child(1)
+				width: 100%
+			&__label
+				left: 0px
+				top: 250px
+				padding: 10px
+				font-size: 11px
+				line-height: 12px
+		&-info
+			row-gap: 10px
+			&__title
+				font-size: 20px
+				line-height: 22px
+			&__text
+				font-size: 12px
+				line-height: 16px
+	.advantages
+		&-company
+			padding: 30px 0
+	.use
+		padding: 30px 0
+		&-slider
+			padding: 30px 0 0 0
+			height: 250px
+			&__slide
+				img
+					height: 220px
+	.infographics
+		padding: 30px 0 15px 0
+	.partners
+		padding: 20px 0 10px 0
+		&-slider
+			padding: 30px 0 0 0
 
 @media (max-width: 425px)
 
@@ -624,3 +724,21 @@
 			&__worktime, &__holidays
 				font-size: 9px
 				line-height: 11px
+	.company
+		&-image
+			&__label
+				top: 200px
+				padding: 8px
+		&-info
+			&__text
+				line-height: 15px
+	.use
+		&-slider
+			&__buttons
+				right: 50%
+				transform: translateX(50%)
+	.partners
+		&-slider
+			&__buttons
+				right: 50%
+				transform: translateX(50%)

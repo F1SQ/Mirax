@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.424" height="12.133" viewBox="0 0 28.424 12.133">
+  <g id="arrow" transform="translate(27.424 10.719) rotate(180)">
+    <path id="Line" d="M0,0H26.257" transform="translate(0 4.652)" fill="none" stroke="#007bba" stroke-linecap="round" stroke-width="2" fill-rule="evenodd"/>
+    <path id="Head" d="M0,0,4.652,4.652,0,9.3" transform="translate(21.771)" fill="none" stroke="#007bba" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+  </g>
+</svg>

@@ -1276,5 +1276,186 @@ body
 			&::after
 				opacity: 0.3
 
+// about-company //////////////////////////////////////////////////////////////////////////////////////
+.advantages
+	&-company
+		padding: 60px 0
+
+.company
+	border-bottom: 24px solid #F6F6F6
+	padding: 34px 0 60px 0
+	&-title
+		margin: 0 0 35px 0
+	&-wrapper
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		column-gap: 28px
+		// align-items: center
+	&-image
+		position: relative
+		&__label
+			position: absolute
+			left: -38px
+			top: 350px
+			// bottom: 79px
+			padding: 20px
+			background-color: #247ABE
+			font-size: 16px
+			line-height: 19px
+			color: #fff
+			font-weight: bold
+		&__bg
+			position: absolute
+			width: 370px
+			height: 370px
+			top: 50%
+			transform: translateY(-50%)
+			left: -30%
+			z-index: -1
+	&-info
+		padding: 25px 0 0 0
+		display: flex
+		flex-direction: column
+		row-gap: 30px
+		&__title
+			font-size: 22px
+			line-height: 27px
+			font-weight: bold
+			color: #292929
+			margin: 0 0 10px 0
+		&__text
+			font-size: 14px
+			line-height: 22px
+			font-weight: 500
+			color: #292929
+
+// use //////////////////////////////////////////////////////////////////////////////////////
+
+.use
+	padding: 47px 0 59px 0
+	background-color: #F3F3F3
+	&-title
+		margin: 0 0 10px 0
+	&-wrapper
+		position: relative
+
+	&-slider
+		padding: 40px 0 0 0
+		width: 1170px
+		height: 320px
+		&__slide
+			position: relative
+			display: flex
+			img
+				width: 100%
+				height: 100%
+			span
+				position: absolute
+				bottom: 12px
+				left: 18px
+				font-family: 'Alumni Sans'
+				font-weight: 500
+				color: #fff
+				font-size: 25px
+				line-height: 22px
+				text-transform: uppercase
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				right: 0
+				bottom: 0
+				background-color: #29292967
+		&__buttons
+			width: 85px
+			display: flex
+			justify-content: space-between
+			position: absolute
+			top: 0
+			right: 5px
+		&-wrapper
+			width: 100%
+
+	&-button--prev, &-button--next
+		cursor: pointer
+		svg
+			transition: all 0.3s ease
+			stroke: #007BBA
+		&:active
+			svg
+				stroke: darken(#007BBA, 10%)
+
+// .swiper
+// 	&-wrapper
+// 	&-slide
+
+// infographics //////////////////////////////////////////////////////////////////////////////////////
+
+.infographics
+	padding: 41px 0 25px 0
+	&-title
+		margin: 0 0 38px 0
+	&-wrapper
+		width: 100%
+		height: 480px
+	&-image
+		img
+			max-width: 100%
+
+// partners //////////////////////////////////////////////////////////////////////////////////////
+
+.partners
+	position: relative
+	padding: 25px 0 65px 0
+	&__bg
+		position: absolute
+		width: 470px
+		height: 470px
+		left: -60px
+		top: 50%
+		transform: translateY(-50%)
+		z-index: -1
+	&-title
+		margin: 0 0 10px 0
+	&-wrapper
+		position: relative
+		width: 100%
+	&-slider
+		padding: 40px 0 0 0
+		&__wrapper
+
+		&__slide
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			img
+				transition: all 0.4s ease
+				filter: grayscale(1)
+			&:hover
+				img
+					filter: grayscale(0)
+		&__buttons
+			width: 85px
+			display: flex
+			justify-content: space-between
+			position: absolute
+			top: 0
+			right: 5px
+		&__button--prev, &__button--next
+			cursor: pointer
+		svg
+			transition: all 0.3s ease
+			stroke: #007BBA
+		&:active
+			svg
+				stroke: darken(#007BBA, 10%)
+
+// .swiper
+// 	&-wrapper
+	// &-slide
+
 // media //////////////////////////////////////////////////////////////////////////////////////
 @import "media"
