@@ -50,6 +50,59 @@ body
 	text-transform: uppercase
 	color: #292929
 
+// hidden-form //////////////////////////////////////////////////////////////////////////////////////
+
+.hidden-form
+	display: none
+	width: 350px
+	min-height: 330px
+	margin: 0 auto
+	padding: 15px
+	background-color: #F3F3F3
+	&__title
+		text-align: center
+		font-size: 16px
+		line-height: 20px
+		font-weight: bold
+		margin: 0 0 20px 0
+	&__wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	&__input
+		padding: 13px 11px
+		border-radius: 3px
+		border: 1px solid #247ABE
+		width: 270px
+		min-height: 43px
+		background-color: #F3F3F3
+		color: #247abe
+		font-size: 12px
+		line-height: 15px
+		font-weight: 500
+		margin: 0 0 25px 0
+		&::placeholder
+			color: #247abe
+
+	&__button
+		width: 270px
+		min-height: 43px
+		color: #fff
+		font-size: 10px
+		line-height: 13px
+		font-weight: bold
+		background-color: #F18C16
+		border: none
+		border-radius: 5px
+		text-transform: uppercase
+		cursor: pointer
+		padding: 15px 30px
+		-webkit-transition: all 0.3s ease
+		transition: all 0.3s ease
+		&:hover
+			background-color: darken(#F18C16, 10%)
+
 // hidden-menu //////////////////////////////////////////////////////////////////////////////////////
 
 .hidden-menu
@@ -831,6 +884,7 @@ body
 	&-button
 		width: 270px
 		min-height: 43px
+		padding: 15px 30px
 		color: #fff
 		font-size: 10px
 		line-height: 13px
@@ -1492,7 +1546,7 @@ body
 			display: block
 			width: auto
 
-			span
+			a
 				display: inline-block
 				font-family: 'Alumni Sans'
 				font-weight: 500
@@ -1504,7 +1558,7 @@ body
 				background-color: transparent
 				border: none
 				text-align: center
-			span.swiper-pagination-bullet-active
+			a.swiper-pagination-bullet-active
 				color: #F18C16
 
 	&-slide
@@ -1580,9 +1634,10 @@ body
 .swiper-pagination-bullets.swiper-pagination-horizontal
 	width: auto
 	margin: 0 10px
-	span
+	a
+		text-decoration: none
 		color: #fff
-	span.swiper-pagination-bullet-active
+	a.swiper-pagination-bullet-active
 		color: #F18C16
 
 // .swiper

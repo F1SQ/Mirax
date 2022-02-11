@@ -122,7 +122,7 @@ $(function () {
       el: ".uncos-slider__pagination",
       clickable: true,
       renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
+        return '<a href="#" class="' + className + '">' + (index + 1) + "</a>";
       },
     },
   });
