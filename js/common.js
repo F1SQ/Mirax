@@ -100,6 +100,26 @@ $(function () {
     },
   });
 
+  const uncosSlider = new Swiper(".uncos-slider", {
+    loop: true,
+    speed: 700,
+    grabCursor: true,
+    observer: true,
+    autoHeight: true,
+    slidesPerView: 1,
+    // spaceBetween: 22,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".uncos-slider__button--next",
+      prevEl: ".uncos-slider__button--prev",
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+  });
+
   var nav = $(".header");
 
   $(window).scroll(function () {
