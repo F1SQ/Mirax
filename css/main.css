@@ -2336,6 +2336,13 @@ body {
   margin: 0 0 5px 0;
 }
 
+.uncos-slider .swiper-pagination-bullet {
+  color: #fff;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
 .uncos-slider__slide {
   display: -ms-grid;
   display: grid;
@@ -2344,6 +2351,7 @@ body {
 }
 
 .uncos-slider__buttons {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2354,6 +2362,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  min-height: 43px;
   padding: 0 10px;
   background-color: #247ABE;
   color: #fff;
@@ -2365,6 +2374,29 @@ body {
 
 .uncos-slider__button--prev svg, .uncos-slider__button--next svg {
   stroke: #fff;
+}
+
+.uncos-slider__pagination {
+  display: block;
+  width: auto;
+}
+
+.uncos-slider__pagination span {
+  display: inline-block;
+  font-family: 'Alumni Sans';
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 27px;
+  width: 15px;
+  height: 100%;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+
+.uncos-slider__pagination span.swiper-pagination-bullet-active {
+  color: #F18C16;
 }
 
 .uncos-slide__item {
@@ -2480,6 +2512,19 @@ body {
 
 .uncos-slide__button:hover {
   background-color: #c8710c;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: auto;
+  margin: 0 10px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal span {
+  color: #fff;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal span.swiper-pagination-bullet-active {
+  color: #F18C16;
 }
 
 @media (max-width: 1440px) {

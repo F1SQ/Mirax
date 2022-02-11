@@ -118,6 +118,13 @@ $(function () {
       enabled: true,
       onlyInViewport: true,
     },
+    pagination: {
+      el: ".uncos-slider__pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+    },
   });
 
   var nav = $(".header");

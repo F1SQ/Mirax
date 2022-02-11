@@ -1466,16 +1466,21 @@ body
 	&-wrapper
 
 	&-slider
-
+		.swiper-pagination-bullet
+			color: #fff
+			opacity: 1
+			transition: all 0.4s ease
 		&__slide
 			display: grid
 			grid-template-columns: 1fr
 			// row-gap: 70px
 		&__buttons
+			position: relative
 			display: flex
 			justify-content: flex-end
 			align-items: center
 			width: 100%
+			min-height: 43px
 			padding: 0 10px
 			background-color: #247ABE
 			color: #fff
@@ -1483,6 +1488,25 @@ body
 			cursor: pointer
 			svg
 				stroke: #fff
+		&__pagination
+			display: block
+			width: auto
+
+			span
+				display: inline-block
+				font-family: 'Alumni Sans'
+				font-weight: 500
+				font-size: 31px
+				line-height: 27px
+				width: 15px
+				height: 100%
+				color: #fff
+				background-color: transparent
+				border: none
+				text-align: center
+			span.swiper-pagination-bullet-active
+				color: #F18C16
+
 	&-slide
 
 		&__item
@@ -1551,6 +1575,13 @@ body
 			transition: all 0.3s ease
 			&:hover
 				background-color: darken(#F18C16, 10%)
+.swiper-pagination-bullets.swiper-pagination-horizontal
+	width: auto
+	margin: 0 10px
+	span
+		color: #fff
+	span.swiper-pagination-bullet-active
+		color: #F18C16
 
 // .swiper
 // .swiper-wrapper
