@@ -103,7 +103,7 @@ $(function () {
   const uncosSlider = new Swiper(".uncos-slider", {
     loop: true,
     speed: 700,
-    grabCursor: true,
+    // grabCursor: true,
     observer: true,
     autoHeight: true,
     slidesPerView: 1,
