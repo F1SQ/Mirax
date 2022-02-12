@@ -127,6 +127,26 @@ $(function () {
     },
   });
 
+  const articleSlider = new Swiper(".article-slider", {
+    loop: true,
+    speed: 700,
+    grabCursor: true,
+    observer: true,
+    autoHeight: true,
+    slidesPerView: 1,
+    // spaceBetween: 22,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".article-slider__button--next",
+      prevEl: ".article-slider__button--prev",
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+  });
+
   var nav = $(".header");
 
   $(window).scroll(function () {

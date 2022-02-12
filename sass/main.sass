@@ -82,7 +82,7 @@ body
 		font-size: 12px
 		line-height: 15px
 		font-weight: 500
-		margin: 0 0 25px 0
+		margin: 0 0 20px 0
 		&::placeholder
 			color: #247abe
 
@@ -1645,6 +1645,167 @@ body
 // .swiper-wrapper
 // .swiper-slide
 // .swiper-pagination
+
+// article //////////////////////////////////////////////////////////////////////////////////////
+
+.article
+	padding: 35px 0 65px 0
+	&-title
+		margin: 0 0 44px 0
+	&-slider
+		margin: 0 0 59px 0
+		&__nav
+			display: flex
+			align-items: center
+			justify-content: space-between
+			min-height: 43px
+			padding: 0 18px
+			background-color: #247ABE
+			color: #fff
+		&__name
+			font-family: 'Alumni Sans'
+			font-size: 40px
+			line-height: 35px
+			font-weight: 500
+			text-transform: uppercase
+		&__buttons
+			width: 80px
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&__button--prev, &__button--next
+			cursor: pointer
+			svg
+				stroke: #fff
+
+	&-slide
+		padding: 30px 0 25px 0
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color: #F3F3F3
+.content
+	color: #292929
+	p
+		font-size: 14px
+		line-height: 22px
+		font-weight: 500
+		margin: 0 0 30px 0
+		a
+			font-size: 13px
+			line-height: 17px
+			font-weight: 500
+			color: #247ABE
+			transition: all 0.3s ease
+			&:hover
+				color: lighten(#247ABE, 20%)
+	h2, h3, h4, h5, h6
+		text-transform: uppercase
+		font-family: 'Alumni Sans'
+		font-weight: 500
+		line-height: 30px
+		margin: 0 0 40px 0
+	h2
+		font-size: 44px
+
+	h3
+		font-size: 35px
+
+	h4
+		font-size: 30px
+
+	h5
+		font-size: 30px
+	h6
+		font-size: 20px
+	ul
+		margin: 0 0 20px 0
+		padding: 0 0 0 15px
+		li
+			padding: 0px 0 0 7px
+			font-weight: 500
+			font-size: 13px
+			line-height: 17px
+			&:not(:last-child)
+				margin: 0 0 25px 0
+	ol
+		margin: 0 0 20px 0
+		padding: 0
+		list-style: none
+		// counter-reset: step-counter
+		li
+			counter-increment: step-counter
+			padding: 0 0 0 22px
+			font-weight: 500
+			font-size: 13px
+			line-height: 17px
+			&:not(:last-child)
+				margin: 0 0 25px 0
+		li:before
+			font-family: 'Alumni Sans'
+			font-weight: 500
+			font-size: 37px
+			line-height: 33px
+			margin: 0 13px 0 0
+			content: counter(step-counter)'.'
+			background: transparent
+			// border-radius: 100%
+			color: inherit
+			width: 15px
+			text-align: center
+			// display: inline-block
+	blockquote
+		background-color: #F7F7F7
+		min-height: 108px
+		background-image: url('../img/article-blockquotes-icon.png')
+		background-repeat: no-repeat
+		background-position-x: 38px
+		background-position-y: 50%
+		background-size: fill
+		margin: 0 0 50px 0
+		padding: 37px 110px 40px 110px
+	table
+		th, td
+			&:nth-child(1)
+				text-align: center
+				width: 52px
+				margin: 0 3px 0 0
+			&:nth-child(2)
+				text-align: left
+				width: 400px
+				margin: 0 3px 0 0
+			&:nth-child(3)
+				text-align: left
+				width: 356px
+				margin: 0 3px 0 0
+			&:nth-child(4)
+				text-align: left
+				width: 356px
+				margin: 0 3px 0 0
+		th
+			&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+				background-color: #247ABE
+				color: #fff
+				text-transform: uppercase
+				padding: 15px
+				font-family: 'Alumni Sans'
+				font-weight: 500
+				font-size: 20px
+				line-height: normal
+		td
+			&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+				color: inherit
+				font-weight: 500
+				font-size: 16px
+				line-height: 22px
+				padding: 10px 15px
+		tr
+			&:nth-child(even)
+				background-color: #F7F7F7
+
+// .swiper
+// 	&-wrapper
+// 	&-slide
 
 // media //////////////////////////////////////////////////////////////////////////////////////
 @import "media"
