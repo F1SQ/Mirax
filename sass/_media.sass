@@ -429,11 +429,12 @@
 	// 		width: 440px
 	.atom
 		padding: 70px 0 50px 0
+
 		&-title
 			margin: 0 0 20px 0
 		&-info
 			grid-column: 1/3
-			grid-row: 2/3
+			grid-row: 3
 			row-gap: 10px
 			margin: 0 auto
 			max-width: 100%
@@ -455,7 +456,7 @@
 		&-wrapper
 			width: 100%
 			grid-column: 1/3
-			grid-row: 3
+			grid-row: 2/3
 			margin: 0 auto
 
 @media (max-width: 767px)
@@ -794,6 +795,9 @@
 			h4
 				font-size: 22px
 				line-height: 22px
+		&-item
+			&__close
+				right: 12px
 	.attachment
 		padding: 20px 0
 		&-wrapper
@@ -861,6 +865,11 @@
 		&-slide
 			&__date
 				margin: 0 auto 15px
+	.article
+		&-slide
+			img
+				max-height: 250px
+
 	.documents
 		&-item
 			&__wrapper
