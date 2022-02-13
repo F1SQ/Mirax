@@ -115,6 +115,23 @@
 					line-height: 19px
 					&:not(:last-child)
 						margin: 0 0 20px 0
+	.company
+		padding: 25px 0 40px 0
+		&-image
+			&__label
+				left: -20px
+				top: 310px
+		&-info
+			&__text
+				line-height: 18px
+	.atom
+		&-slider
+			&__block
+				width: 670px
+
+	.content
+		&-wrapper
+			width: 670px
 
 @media (max-width: 1024px)
 	.use
@@ -136,6 +153,7 @@
 		&-slider
 			&__slide
 				justify-content: center
+
 @media (max-width: 992px)
 	.container
 		width: 730px
@@ -352,6 +370,93 @@
 					line-height: 16px
 					&:not(:last-child)
 						margin: 0 0 10px 0
+	.article
+		padding: 75px 0 45px 0
+		&-title
+			margin: 0 0 30px 0
+		&-slider
+			margin: 0 0 35px 0
+		&-slide
+			padding: 50px
+	.content
+		p
+			font-size: 13px
+			line-height: 20px
+			margin: 0 0 20px 0
+		h2
+			font-size: 36px
+			margin: 0 0 30px 0
+		h3
+			font-size: 30px
+			margin: 0 0 25px 0
+		h4
+			font-size: 26px
+			margin: 0 0 20px 0
+		h5
+			font-size: 24px
+			margin: 0 0 20px 0
+		ul
+			li:not(:last-child)
+				margin: 0 0 15px 0
+		ol
+			li:before
+				font-size: 21px
+				line-height: 22px
+			li:not(:last-child)
+				margin: 0 0 15px 0
+		blockquote
+			min-height: 90px
+			padding: 27px 27px 27px 90px
+			background-position-x: 25px
+		table
+			th
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					font-size: 18px
+			td
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					font-weight: 500
+					font-size: 15px
+					line-height: 20px
+	// .atom
+		// padding: 70px 0 50px 0
+		// &-main
+			// width: 440px
+		// &-slider
+		// 	&__block
+		// 		width: 440px
+	// .content
+	// 	&-wrapper
+	// 		width: 440px
+	.atom
+		padding: 70px 0 50px 0
+		&-title
+			margin: 0 0 20px 0
+		&-info
+			grid-column: 1/3
+			grid-row: 2/3
+			row-gap: 10px
+			margin: 0 auto
+			max-width: 100%
+			&__buttons
+				// max-width: 300px
+				// margin: 0 auto 26px
+		&-slider
+			&__block
+				width: 100%
+				grid-column: 1/3
+				grid-row: 1/2
+			&__name
+				font-size: 26px
+				line-height: 30px
+		&-slide
+			img
+				max-height: 300px
+	.content
+		&-wrapper
+			width: 100%
+			grid-column: 1/3
+			grid-row: 3
+			margin: 0 auto
 
 @media (max-width: 767px)
 	.container
@@ -452,6 +557,7 @@
 				padding: 0
 			&__button
 				margin: 0 auto
+
 @media (max-width: 576px)
 	.container
 		width: 100%
@@ -531,7 +637,7 @@
 			&__last
 				min-height: 250px
 	.request
-		padding: 40px 0 30px 0
+		padding: 30px 0
 		&-text
 			font-size: 11px
 			line-height: normal
@@ -609,7 +715,101 @@
 		padding: 20px 0 10px 0
 		&-slider
 			padding: 30px 0 0 0
+	.article
+		padding: 55px 0 35px 0
+		&-slider
+			&__name
+				font-size: 26px
+				line-height: 30px
+		&-slide
+			padding: 30px
+		&-title
+			margin: 0 0 20px 0
+	.content
+		p
+			font-size: 12px
+			line-height: 18px
+		h2
+			font-size: 30px
+			margin: 0px 0 20px 0
+		h3
+			font-size: 26px
+			margin: 0 0 20px 0
+		h4
+			font-size: 24px
+			margin: 0 0 15px 0
+		h5
+			font-size: 20px
+			margin: 0 0 15px 0
+			line-height: 25px
+		h6
+			font-size: 18px
+			line-height: 20px
+			margin: 0 0 15px 0
+		ul
+			li
+				font-size: 12px
+				line-height: 15px
+			li:not(:last-child)
+				margin: 0 0 10px 0
+		ol
+			li
+				font-size: 12px
+				line-height: 15px
+			li:not(:last-child)
+				margin: 0 0 10px 0
+	.content
+		blockquote
+			background-position-x: 15px
+			padding: 20px 20px 20px 75px
+			margin: 0 0 25px 0
+		h2
+			font-size: 26px
+		h3
+			font-size: 24px
+		h4
+			font-size: 22px
 
+		table
+			th
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					padding: 10px
+			td
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					padding: 7px 8px
+			th
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					font-size: 16px
+			td
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					font-size: 12px
+					line-height: 16px
+
+	.documents
+		padding: 20px 0 30px 0
+		&-title
+			margin: 0 0 20px 0
+		&-name
+			padding: 12px
+			h4
+				font-size: 22px
+				line-height: 22px
+	.attachment
+		padding: 20px 0
+		&-wrapper
+			p
+				font-size: 12px
+				line-height: 15px
+		&-social
+			flex-direction: column
+			align-items: center
+			row-gap: 15px
+			&__links
+				width: 100%
+				justify-content: flex-start
+				flex-wrap: wrap
+				column-gap: 12px
+				row-gap: 10px
 @media (max-width: 425px)
 
 	.contacts
@@ -661,6 +861,36 @@
 		&-slide
 			&__date
 				margin: 0 auto 15px
+	.documents
+		&-item
+			&__wrapper
+				ul
+					flex-direction: column
+					row-gap: 15px
+					div
+						row-gap: 15px
+						width: 100%
+	.atom
+		&-main
+			row-gap: 10px
+		&-slider
+			&__block
+				width: 100%
+				margin: 0 auto
+		&-info
+			row-gap: 14px
+			&__buttons
+				font-size: 10px
+				line-height: 12px
+			&__title
+				font-size: 15px
+				line-height: 18px
+				margin: 0 0 12px 0
+			&__text
+				font-size: 12px
+				line-height: 15px
+			&__description
+				margin: 0
 
 @media (max-width: 375px)
 	.section-title
@@ -807,3 +1037,36 @@
 			&__buttons
 				right: 50%
 				transform: translateX(50%)
+	.article
+		&-slider
+			&__name
+				font-size: 26px
+	.content
+		table
+			th
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					padding: 7px
+			td
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					padding: 5px 7px
+			th
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					font-size: 14px
+			th
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					padding: 7px
+			td
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					padding: 5px 7px
+			th
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					font-size: 16px
+			td
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					font-size: 11px
+					line-height: 14px
+	.attachment
+		&-social
+			&__share
+				width: 100%
+				text-align: center

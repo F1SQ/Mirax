@@ -1865,7 +1865,7 @@ body
 					align-items: flex-start
 					row-gap: 18px
 					width: 50%
-					padding: 0 10px 0 0
+					padding: 0 25px 0 0
 				li
 					a
 						display: flex
@@ -2001,14 +2001,18 @@ body
 	&-title
 		margin: 0 0 32px 0
 	&-wrapper
-		display: grid
-		grid-template-columns: 270px 1fr
+		display: flex
+		// flex-wrap: wrap
 		column-gap: 20px
+		// display: flex
+		// column-gap: 20px
 
 	&-info
+		grid-row: 1/3
 		display: flex
 		flex-direction: column
 		align-items: flex-start
+		max-width: 270px
 		&__links
 			display: flex
 			flex-direction: column
@@ -2081,14 +2085,24 @@ body
 			font-weight: 500
 
 	&-main
-		display: flex
-		flex-direction: column
-		max-width: 880px
+		// display: flex
+		// flex-direction: row
+		// flex-wrap: wrap
+		display: grid
+		grid-template-columns: 270px 1fr
+		grid-template-rows: repeat(3, min-content)
+		column-gap: 20px
+		row-gap: 40px
+		// width: 880px
 	&-slider
-		width: 880px
+		max-width: 100%
+		// width: 880px
+		grid-row: 1/2
+		&__block
+			width: 880px
 		// &__wrapper
 
-		margin: 0 0 59px 0
+			margin: 0 0 59px 0
 		&__nav
 			display: flex
 			align-items: center
@@ -2114,12 +2128,17 @@ body
 				stroke: #fff
 
 	&-slide
-		padding: 30px 0 25px 0
+		padding: 25px 50px
 		display: flex
 		align-items: center
 		justify-content: center
 		background-color: #F3F3F3
-// .content
+.content
+	&-wrapper
+		grid-column: 2/3
+		grid-row: 2/3
+		width: 880px
+		margin-left: auto
 
 // .swiper
 // .swiper-wrapper
