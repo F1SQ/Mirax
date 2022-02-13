@@ -147,6 +147,26 @@ $(function () {
     },
   });
 
+  const atomSlider = new Swiper(".atom-slider", {
+    loop: true,
+    speed: 700,
+    grabCursor: true,
+    observer: true,
+    autoHeight: true,
+    slidesPerView: 1,
+    // spaceBetween: 22,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".atom-slider__button--next",
+      prevEl: ".atom-slider__button--prev",
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+  });
+
   var nav = $(".header");
 
   $(window).scroll(function () {

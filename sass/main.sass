@@ -1758,13 +1758,16 @@ body
 	blockquote
 		background-color: #F7F7F7
 		min-height: 108px
+		font-size: 11px
+		line-height: 17px
+		font-weight: 500
 		background-image: url('../img/article-blockquotes-icon.png')
 		background-repeat: no-repeat
 		background-position-x: 38px
 		background-position-y: 50%
 		background-size: fill
 		margin: 0 0 50px 0
-		padding: 37px 110px 40px 110px
+		padding: 37px 37px 40px 110px
 	table
 		th, td
 			&:nth-child(1)
@@ -1954,8 +1957,8 @@ body
 					line-height: 15px
 					img
 						margin: 0 9px 0 0
-						&:hover
-							text-decoration: underline
+					&:hover
+						text-decoration: underline
 
 	&-social
 		display: flex
@@ -1990,6 +1993,137 @@ body
 			align-items: center
 			justify-content: center
 			text-decoration: none
+
+// atom //////////////////////////////////////////////////////////////////////////////////////
+
+.atom
+	padding: 32px 0 50px 0
+	&-title
+		margin: 0 0 32px 0
+	&-wrapper
+		display: grid
+		grid-template-columns: 270px 1fr
+		column-gap: 20px
+
+	&-info
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		&__links
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			width: 100%
+			row-gap: 2px
+			margin: 0 0 3px 0
+
+		&__link
+			width: 100%
+			display: flex
+			align-items: center
+			justify-content: space-between
+			padding: 13px
+			font-size: 14px
+			line-height: 18px
+			font-weight: bold
+			text-decoration: none
+			color: #247ABE
+			background-color: #F3F3F3
+			transition: all 0.3s ease
+			&:hover
+				background-color: darken(#F3F3F3, 10%)
+			svg
+				stroke: 	#247ABE
+				transform: rotate(180deg)
+		&__buttons
+			width: 100%
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			row-gap: 3px
+			margin: 0 0 26px 0
+		&__button
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 100%
+			padding: 15px
+			border-radius: 5px
+			color: #fff
+			background-color: #F18C16
+			font-size: 12px
+			line-height: 15px
+			font-weight: bold
+			text-transform: uppercase
+			text-decoration: none
+			transition: all 0.3s ease
+			&:hover
+				background-color: darken(#F18C16, 10%)
+
+			svg
+				fill: #fff
+				margin: 0 6px 0 0
+
+		&__description
+			padding: 0 0 20px 0
+			margin: 0 0 17px 0
+			&:not(:last-child)
+				border-bottom: 1px solid #F3F3F3
+
+		&__title
+			font-size: 18px
+			line-height: 22px
+			font-weight: bold
+			margin: 0 0 18px 0
+		&__text
+			font-size: 13px
+			line-height: 17px
+			font-weight: 500
+
+	&-main
+		display: flex
+		flex-direction: column
+		max-width: 880px
+	&-slider
+		width: 880px
+		// &__wrapper
+
+		margin: 0 0 59px 0
+		&__nav
+			display: flex
+			align-items: center
+			justify-content: space-between
+			min-height: 43px
+			padding: 0 18px
+			background-color: #247ABE
+			color: #fff
+		&__name
+			font-family: 'Alumni Sans'
+			font-size: 40px
+			line-height: 35px
+			font-weight: 500
+			text-transform: uppercase
+		&__buttons
+			width: 80px
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&__button--prev, &__button--next
+			cursor: pointer
+			svg
+				stroke: #fff
+
+	&-slide
+		padding: 30px 0 25px 0
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color: #F3F3F3
+// .content
+
+// .swiper
+// .swiper-wrapper
+// .swiper-slide
 
 // media //////////////////////////////////////////////////////////////////////////////////////
 @import "media"

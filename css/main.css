@@ -2786,13 +2786,16 @@ body {
 .content blockquote {
   background-color: #F7F7F7;
   min-height: 108px;
+  font-size: 11px;
+  line-height: 17px;
+  font-weight: 500;
   background-image: url("../img/article-blockquotes-icon.png");
   background-repeat: no-repeat;
   background-position-x: 38px;
   background-position-y: 50%;
   background-size: fill;
   margin: 0 0 50px 0;
-  padding: 37px 110px 40px 110px;
+  padding: 37px 37px 40px 110px;
 }
 
 .content table th:nth-child(1), .content table td:nth-child(1) {
@@ -3083,7 +3086,7 @@ body {
   margin: 0 9px 0 0;
 }
 
-.attachment-wrapper ul li a img:hover {
+.attachment-wrapper ul li a:hover {
   text-decoration: underline;
 }
 
@@ -3148,6 +3151,230 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
+}
+
+.atom {
+  padding: 32px 0 50px 0;
+}
+
+.atom-title {
+  margin: 0 0 32px 0;
+}
+
+.atom-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 270px 1fr;
+      grid-template-columns: 270px 1fr;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.atom-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.atom-info__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  row-gap: 2px;
+  margin: 0 0 3px 0;
+}
+
+.atom-info__link {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 13px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #247ABE;
+  background-color: #F3F3F3;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.atom-info__link:hover {
+  background-color: #dadada;
+}
+
+.atom-info__link svg {
+  stroke: #247ABE;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.atom-info__buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  row-gap: 3px;
+  margin: 0 0 26px 0;
+}
+
+.atom-info__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #F18C16;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.atom-info__button:hover {
+  background-color: #c8710c;
+}
+
+.atom-info__button svg {
+  fill: #fff;
+  margin: 0 6px 0 0;
+}
+
+.atom-info__description {
+  padding: 0 0 20px 0;
+  margin: 0 0 17px 0;
+}
+
+.atom-info__description:not(:last-child) {
+  border-bottom: 1px solid #F3F3F3;
+}
+
+.atom-info__title {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  margin: 0 0 18px 0;
+}
+
+.atom-info__text {
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 500;
+}
+
+.atom-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 880px;
+}
+
+.atom-slider {
+  width: 880px;
+  margin: 0 0 59px 0;
+}
+
+.atom-slider__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 43px;
+  padding: 0 18px;
+  background-color: #247ABE;
+  color: #fff;
+}
+
+.atom-slider__name {
+  font-family: 'Alumni Sans';
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.atom-slider__buttons {
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.atom-slider__button--prev, .atom-slider__button--next {
+  cursor: pointer;
+}
+
+.atom-slider__button--prev svg, .atom-slider__button--next svg {
+  stroke: #fff;
+}
+
+.atom-slide {
+  padding: 30px 0 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F3F3F3;
 }
 
 @media (max-width: 1440px) {
