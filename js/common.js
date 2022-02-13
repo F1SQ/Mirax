@@ -180,4 +180,19 @@ $(function () {
       $(this).addClass("active");
     }
   });
+
+  $(".documents-item").first().click();
+  $(".documents-name").click(function () {
+    $(this).parent().toggleClass("documents-item_visible");
+    $(this).toggleClass("documents-name_active");
+    $(this).next().slideToggle("documents-item__wrapper_active");
+    $(this).next().next().toggleClass("documents-item__close_active");
+  });
+
+  $(".documents-item").first().click();
+  $(".documents-item__close").click(function () {
+    $(this).parent().slideToggle("documents-item__wrapper_active");
+    $(this).parent().prev().removeClass("documents-name_active");
+    $(this).parent().prev().parent().removeClass("documents-item_visible");
+  });
 });
